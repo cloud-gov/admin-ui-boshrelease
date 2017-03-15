@@ -1,7 +1,6 @@
 ---
 name: uaac
 dependencies:
-  - ruby
+- ruby
 files:
-  - uaac/Gemfile*
-
+- uaac/**/*

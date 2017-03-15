@@ -1,0 +1,7 @@
+source "https://rubygems.org"
+
+gem "vcap_common",
+  :git => "https://github.com/cloudfoundry/vcap-common.git",
+  :ref => "bdd2eac66b6e4f43ff5b943d94cb462a60323a35"
+
+gem "cf-registrar"
