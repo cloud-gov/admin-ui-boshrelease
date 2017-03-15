@@ -5,7 +5,7 @@ bundle_cmd=/var/vcap/packages/ruby/bin/bundle
 mysqlclient_dir=/var/vcap/packages/mysqlclient
 libpq_dir=/var/vcap/packages/libpq
 
-cp -a ${BOSH_COMPILE_TARGET}/{admin_ui,vcap-common} ${BOSH_INSTALL_TARGET}
+cp -a ${BOSH_COMPILE_TARGET}/{admin_ui,admin_ui_gems,vcap-common} ${BOSH_INSTALL_TARGET}
 
 cd ${BOSH_INSTALL_TARGET}/admin_ui
 $bundle_cmd config build.mysql2 --with-mysql-config=$mysqlclient_dir/bin/mysql_config
