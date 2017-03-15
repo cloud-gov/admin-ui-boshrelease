@@ -11,4 +11,4 @@ files:
   - admin_ui/{Gemfile,Gemfile.lock}
   - admin_ui/{lib,bin,db}/**/*
   - admin_ui_gems/**/*
-  - vcap-common/**/*
+  - vcap_common/**/*
