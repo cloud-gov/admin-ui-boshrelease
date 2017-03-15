@@ -1,13 +1,12 @@
 ---
 name: admin_ui
-
 dependencies:
-  - ruby
-  - libpq
-  - sqlite
-  - mysqlclient
-
+- ruby
+- libpq
+- sqlite
+- mysqlclient
 files:
-  - admin_ui/{Gemfile,Gemfile.lock}
-  - admin_ui/{lib,bin,db}/**/*
-  - vcap-common/**/*
+- admin_ui/{Gemfile,Gemfile.lock}
+- admin_ui/{lib,bin,db}/**/*
+- admin_ui_gems/**/*
+- vcap_common/**/*
