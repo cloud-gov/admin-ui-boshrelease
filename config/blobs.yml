@@ -1,12 +1,12 @@
 ---
-ruby/bundler-1.2.1.gem:
-  object_id: 458d4d9f-aa0e-488d-94d9-ca8b50d6dfb3
-  sha: 0cbe6ad7a41f064d6c11c1058465fffb1bd58069
-  size: 226816
-ruby/ruby-1.9.3-p448.tar.gz:
-  object_id: 3fe8a983-f754-44c4-8694-0fba414eb5a7
-  sha: c7f736e3bc1ca1e6619a9121837dd0840aad77ce
-  size: 12559260
+ruby/ruby-2.3.3.tar.gz:
+  object_id: 1debe2c2-c008-4eeb-ace9-bdf1938e4e60
+  sha: 1014ee699071aa2ddd501907d18cbe15399c997d
+  size: 17813577
+ruby/bundler-1.14.6.gem:
+  object_id: ae911c63-3747-4cf1-a5ca-dee6f1f2103b
+  sha: 3e84d3a4dd43bfaec988b029f45c0d7ffa205ab8
+  size: 319488
 ruby/rubygems-1.8.24.tgz:
   object_id: 824b70e4-8269-4e4b-a347-de17333f7971
   sha: 30f27047e74f7943117736a0d3e224994fee0905
@@ -27,18 +27,6 @@ mysqlclient/mysql-connector-c-6.1.6-src.tar.gz:
   object_id: e640b8d3-ae0f-4103-8d44-c0f9644d7c41
   sha: 2444586365c2c58e7ca2397d4617e5fe19f9f246
   size: 3475044
-libyaml/yaml-0.1.5.tar.gz:
-  object_id: 3b7b6111-e9a6-468b-8035-46ff800224fd
-  sha: 8b78cb9f759c7d80db8a7328c0ebecfe34fde737
-  size: 504897
-ruby/bundler-1.11.2.gem:
-  object_id: 2c164a12-252b-402b-a21d-bc73cab1b438
-  sha: 8eb956dec72da753d3d2a2126c78508b17af434e
-  size: 263168
-ruby/ruby-2.2.4.tar.gz:
-  object_id: df2a8e6d-04cd-4801-b657-9f975aeca8c5
-  sha: 818e5e157f76d4912ba3a7c7b4fc5156105e83c3
-  size: 16638151
 libyaml/yaml-0.1.6.tar.gz:
   object_id: 5b63285a-fb3f-4508-bbbe-d5beedb7c109
   sha: f3d404e11bec3c4efcddfd14c42d46f1aabe0b5d
