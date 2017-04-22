@@ -13,11 +13,10 @@ message_bus_servers:
   <% end %>
 <% end %>
 
-
 <% if_p("admin_ui.uri") do |uri| %>
 uri:
-  - <%= uri %>
-host: <%= spec.networks.send(p("networks.apps")).ip %>
+- <%= uri %>
+host: <%= spec.ip %>
 index: <%= spec.index %>
 port: 8070
 tags:
@@ -25,4 +24,3 @@ tags:
 varz:
   type: admin_ui
 <% end %>
-
