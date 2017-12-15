@@ -1,5 +1,9 @@
 #!/bin/bash -e
 
+source /var/vcap/packages/ruby-2.4-r3/bosh/runtime.env
+source /var/vcap/packages/admin_ui/bosh/runtime.env
+unset BUNDLE_GEMFILE
+
 export PATH=/var/vcap/packages/ruby/bin:$PATH
 RUN_DIR=/var/vcap/sys/run/admin_ui
 LOG_DIR=/var/vcap/sys/log/admin_ui
@@ -21,7 +25,7 @@ case $1 in
     export CONFIG_FILE=/var/vcap/jobs/admin_ui/config/cf-registrar/config.yml
 
     cd $VCAP_COMMON_PATH
-    exec /var/vcap/packages/ruby/bin/bundle exec \
+    exec bundle exec \
          $VCAP_COMMON_PATH/bin/cf-registrar \
          --register-with-router \
          >>$LOG_DIR/cf-registrar.stdout.log \

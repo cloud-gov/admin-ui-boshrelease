@@ -3,8 +3,9 @@
 set -e # exit immediately if a simple command exits with a non-zero status
 set -u # report the usage of uninitialized variables
 
-source /var/vcap/packages/ruby-2.4/bosh/runtime.env
+source /var/vcap/packages/ruby-2.4-r3/bosh/runtime.env
 source /var/vcap/packages/admin_ui/bosh/runtime.env
+unset BUNDLE_GEMFILE
 
 JOB_NAME=admin_ui
 JOB_DIR=/var/vcap/jobs/$JOB_NAME
@@ -14,7 +15,6 @@ CONFIG=$JOB_DIR/config/$JOB_NAME.yml
 RUN_DIR=/var/vcap/sys/run/$JOB_NAME
 LOG_DIR=/var/vcap/sys/log/$JOB_NAME
 PIDFILE=$RUN_DIR/$JOB_NAME.pid
-
 
 export PATH=/var/vcap/packages/ruby/bin:$PATH
 
