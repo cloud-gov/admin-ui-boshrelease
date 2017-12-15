@@ -1,7 +1,12 @@
 # abort script on any command that exits with a non zero value
 set -e -x
 
-bundle_cmd=/var/vcap/packages/ruby/bin/bundle
+source /var/vcap/packages/ruby-2.4-r3/bosh/compile.env
+
+touch Gemfile Gemfile.lock
+bosh_generate_runtime_env
+rm Gemfile Gemfile.lock
+
 mysqlclient_dir=/var/vcap/packages/mysqlclient
 libpq_dir=/var/vcap/packages/libpq
 
@@ -9,11 +14,11 @@ cp -a ${BOSH_COMPILE_TARGET}/{admin_ui,vcap_common} ${BOSH_INSTALL_TARGET}
 cp -a ${BOSH_COMPILE_TARGET}/admin_ui_gems/vendor ${BOSH_INSTALL_TARGET}/admin_ui
 
 cd ${BOSH_INSTALL_TARGET}/admin_ui
-$bundle_cmd config build.mysql2 --with-mysql-config=$mysqlclient_dir/bin/mysql_config
-$bundle_cmd config build.pg --with-pg-lib=$libpq_dir/lib --with-pg-include=$libpq_dir/include
-$bundle_cmd config build.sequel_pg --with-pg-lib=$libpq_dir/lib --with-pg-include=$libpq_dir/include
-$bundle_cmd config build.sqlite3 --with-sqlite3-dir=/var/vcap/packages/sqlite
-$bundle_cmd install --local --deployment --without=development test
+bundle config build.mysql2 --with-mysql-config=$mysqlclient_dir/bin/mysql_config
+bundle config build.pg --with-pg-lib=$libpq_dir/lib --with-pg-include=$libpq_dir/include
+bundle config build.sequel_pg --with-pg-lib=$libpq_dir/lib --with-pg-include=$libpq_dir/include
+bundle config build.sqlite3 --with-sqlite3-dir=/var/vcap/packages/sqlite
+bundle install --local --deployment --without=development test
 
 cd ${BOSH_INSTALL_TARGET}/vcap_common
-$bundle_cmd install --local --deployment --binstubs --without=development test
+bundle install --local --deployment --binstubs --without=development test

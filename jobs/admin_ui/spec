@@ -7,7 +7,7 @@ templates:
   cf-registrar.config.yml.erb: config/cf-registrar/config.yml
 packages:
   - admin_ui
-  - ruby
+  - ruby-2.4-r3
   - libyaml
   - libpq
   - mysqlclient
