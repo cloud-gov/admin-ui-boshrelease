@@ -41,6 +41,8 @@ stats_refresh_schedules: [ '0 5 * * *' ]
 stats_retries: 5
 stats_retry_interval: 300
 tasks_refresh_interval: 5000
+cookie_secure: <%= p("admin_ui.cookie_secure") %>
+cookie_secret: <%= p("admin_ui.cookie_secret") %>
 uaa_client:
   id: <%= p("admin_ui.uaa.client.id") %>
   secret: <%= p("admin_ui.uaa.client.secret") %>
