@@ -80,6 +80,12 @@ properties:
   admin_ui.ccdb.password:
     description: "CC db username"
 
+  admin_ui.cookie_secure:
+    description: Use secure cookies
+    default: true
+  admin_ui.cookie_secret:
+    description: Cookie secret key
+
   admin_ui.uaa.client.id:
     description: "Uaa OAuth client id"
   admin_ui.uaa.client.secret:
