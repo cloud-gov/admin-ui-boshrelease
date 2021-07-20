@@ -1,7 +1,7 @@
 # abort script on any command that exits with a non zero value
 set -e -x
 
-source /var/vcap/packages/ruby-2.4-r3/bosh/compile.env
+source /var/vcap/packages/ruby-2.7.4-r0.56.0/bosh/compile.env
 
 touch Gemfile Gemfile.lock
 bosh_generate_runtime_env
