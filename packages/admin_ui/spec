@@ -1,6 +1,7 @@
 ---
 name: admin_ui
 dependencies:
+- ruby-2.4-r3
 - ruby-3.0.2-r0.55.0
 - libpq
 - sqlite

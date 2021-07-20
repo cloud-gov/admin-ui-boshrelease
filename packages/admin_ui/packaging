@@ -20,5 +20,6 @@ bundle config build.sequel_pg --with-pg-lib=$libpq_dir/lib --with-pg-include=$li
 bundle config build.sqlite3 --with-sqlite3-dir=/var/vcap/packages/sqlite
 bundle install --local --deployment --without=development test
 
+source /var/vcap/packages/ruby-2.4-r3/bosh/compile.env
 cd ${BOSH_INSTALL_TARGET}/vcap_common
 bundle install --local --deployment --binstubs --without=development test
