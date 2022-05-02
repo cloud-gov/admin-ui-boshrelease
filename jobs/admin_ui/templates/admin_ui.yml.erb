@@ -24,14 +24,23 @@ log_files: [/var/vcap/sys/log/admin_ui/admin_ui.log]
 log_file: /var/vcap/sys/log/admin_ui/admin_ui.log
 log_file_page_size: 51200
 <% if_p("nats.address") do |address| %>
-mbus: nats://<%= p("nats.user") %>:<%= p("nats.password") %>@<%= address %>:<%= p("nats.port") %>
+mbus: <%= p("nats.scheme") %>://<%= p("nats.user") %>:<%= p("nats.password") %>@<%= address %>:<%= p("nats.port") %>
 <% end %>
 <% if_p("nats.machines") do |machines| %>
-mbus: nats://<%= p("nats.user") %>:<%= p("nats.password") %>@<%= machines[0] %>:<%= p("nats.port") %>
+mbus: <%= p("nats.scheme") %>://<%= p("nats.user") %>:<%= p("nats.password") %>@<%= machines[0] %>:<%= p("nats.port") %>
 <% end %>
 monitored_components: [NATS, CloudController, DEA, HealthManager, Router, -Provisioner, ALL]
 nats_discovery_interval: 30
 nats_discovery_timeout: 10
+nats_tls:
+  <% if_p("nats.tls.certificate") %>
+  cert_chain_file: /var/vcap/jobs/nats/tls/nats_client_cert.pem
+  private_key_file: /var/vcap/jobs/nats/tls/nats_client_key.pem
+  <% end %>
+  <% if_p("nats.tls.ca") %>
+  ca_file: /var/vcap/jobs/nats/tls/nats_ca.pem
+  <% end %>
+  verify_peer: <%= p("nats.tls.verify_peer") %>
 port: 8070
 receiver_emails: [ ]
 sender_email:
