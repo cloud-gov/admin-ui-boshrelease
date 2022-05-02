@@ -24,6 +24,18 @@ properties:
     description: "IP addresses of Cloud Foundry NATS servers"
   nats.port:
     description: "IP port of Cloud Foundry NATS server"
+  nats.scheme:
+    description: "Scheme to use for NATS uri: nats or tls"
+    default: nats
+  nats.tls.ca:
+    description: "CA certificate of NATS server - required when nats.tls.verify_peer is true"
+  nats.tls.certificate:
+    description: "client certificate for NATS mTLS"
+  nats.tls.private_key:
+    description: "private key for NATS mTLS"
+  nats.tls.verify_peer:
+    description: "verify certificate of NATS server"
+    default: false
   admin_ui.cloud_controller_uri:
     description: "Full url of the Cloud Controller api"
   admin_ui.cloud_controller_ssl_verify_none:
