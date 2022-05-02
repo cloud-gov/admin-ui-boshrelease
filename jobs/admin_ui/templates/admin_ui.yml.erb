@@ -13,7 +13,8 @@ cloud_controller_ssl_verify_none: <%= p("admin_ui.cloud_controller_ssl_verify_no
 cloud_controller_uri: <%= p("admin_ui.cloud_controller_uri") %>
 component_connection_retries: 2
 data_file: /var/vcap/store/admin_ui/data.json
-db_uri: sqlite://var/vcap/store/admin_ui/store.db
+# sqlite paths look weird at first, but it's scheme(sqlite)://hostname(null)/path(/var/vcap...), hence the quad slashes
+db_uri: sqlite:////var/vcap/store/admin_ui/store.db
 doppler_data_file: /var/vcap/store/admin_ui/doppler_data.json
 doppler_reconnect_delay: 300
 doppler_rollup_interval: 30
