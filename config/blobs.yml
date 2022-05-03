@@ -22,14 +22,6 @@ ruby/bundler-1.14.6.gem:
   size: 319488
   object_id: ae911c63-3747-4cf1-a5ca-dee6f1f2103b
   sha: 3e84d3a4dd43bfaec988b029f45c0d7ffa205ab8
-ruby/ruby-2.3.3.tar.gz:
-  size: 17813577
-  object_id: 1debe2c2-c008-4eeb-ace9-bdf1938e4e60
-  sha: 1014ee699071aa2ddd501907d18cbe15399c997d
-ruby/rubygems-1.8.24.tgz:
-  size: 380101
-  object_id: 824b70e4-8269-4e4b-a347-de17333f7971
-  sha: 30f27047e74f7943117736a0d3e224994fee0905
 sqlite/sqlite-autoconf-3070500.tar.gz:
   size: 1551070
   object_id: f603856f-11db-4b56-91dc-5c6f3ce6fedd

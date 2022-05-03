@@ -5,11 +5,11 @@ logging:
 
 message_bus_servers:
 <% if_p("nats.address") do |address| %>
-  - nats://<%= p("nats.user") %>:<%= p("nats.password") %>@<%= address %>:<%= p("nats.port") %>
+  - <% p("nats.scheme") %>://<%= p("nats.user") %>:<%= p("nats.password") %>@<%= address %>:<%= p("nats.port") %>
 <% end %>
 <% if_p("nats.machines") do |machines| %>
   <% machines.each do |machine| %>        
-  - nats://<%= p("nats.user") %>:<%= p("nats.password") %>@<%= machine %>:<%= p("nats.port") %>
+  - <%= p("nats.scheme") %>://<%= p("nats.user") %>:<%= p("nats.password") %>@<%= machine %>:<%= p("nats.port") %>
   <% end %>
 <% end %>
 
