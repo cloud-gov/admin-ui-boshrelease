@@ -1,3 +1,6 @@
 ---
 BUNDLE_CACHE_ALL: "true"
 BUNDLE_WITHOUT: "development:test"
+BUNDLE_PATH: "vendor/cache/"
+BUNDLE_NO_INSTALL: "true"
+BUNDLE_ALL_PLATFORMS: "true"
