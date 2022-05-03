@@ -32,15 +32,14 @@ mbus: <%= p("nats.scheme") %>://<%= p("nats.user") %>:<%= p("nats.password") %>@
 monitored_components: [NATS, CloudController, DEA, HealthManager, Router, -Provisioner, ALL]
 nats_discovery_interval: 30
 nats_discovery_timeout: 10
+
+<% if_p("nats.tls.certificate") do |certificate| %>
 nats_tls:
-  <% if_p("nats.tls.certificate") do |certificate| %>
   cert_chain_file: /var/vcap/jobs/nats/tls/nats_client_cert.pem
   private_key_file: /var/vcap/jobs/nats/tls/nats_client_key.pem
-  <% end %>
-  <% if_p("nats.tls.ca") do |ca| %>
   ca_file: /var/vcap/jobs/nats/tls/nats_ca.pem
-  <% end %>
   verify_peer: <%= p("nats.tls.verify_peer") %>
+<% end %>
 port: 8070
 receiver_emails: [ ]
 sender_email:
