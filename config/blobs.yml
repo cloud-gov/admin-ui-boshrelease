@@ -2,6 +2,10 @@ admin_ui.tar.gz:
   size: 48080327
   object_id: f4e8acf0-4752-485a-6e73-8a7d69387a6c
   sha: sha256:15bb602a2f133ea752a1b226dca46308e22c2752a84f395cbd3298a5b8677636
+bundler-2.4.9.gem:
+  size: 411136
+  object_id: 17ceda8a-8df8-4e5a-4e57-d28645338b57
+  sha: sha256:6e2450061a11ad1c1b931551ed27ba60e9eacee148e25e1d73a67dd8944584d3
 libyaml/yaml-0.1.6.tar.gz:
   size: 503012
   object_id: 5b63285a-fb3f-4508-bbbe-d5beedb7c109
@@ -18,10 +22,6 @@ postgres/postgresql-9.0.3.tar.gz:
   size: 18335858
   object_id: 4c28f40f-3d59-4015-9765-bead803093ad
   sha: c8fb5d1d7930e78211e554bb5751183a8148d0ee
-ruby/bundler-1.11.2.gem:
-  size: 263168
-  object_id: 2c164a12-252b-402b-a21d-bc73cab1b438
-  sha: 8eb956dec72da753d3d2a2126c78508b17af434e
 ruby/ruby-3.2.1.tar.gz:
   size: 22466154
   object_id: f83e4ea8-f173-4911-5991-c1b411308dc0
