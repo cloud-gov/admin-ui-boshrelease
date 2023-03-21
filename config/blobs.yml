@@ -18,9 +18,8 @@ postgres/postgresql-9.0.3.tar.gz:
   size: 18335858
   object_id: 4c28f40f-3d59-4015-9765-bead803093ad
   sha: c8fb5d1d7930e78211e554bb5751183a8148d0ee
-ruby-3.2.1:
+ruby/ruby-3.2.1.tar.gz:
   size: 22466154
-  object_id: d6b55c55-9867-44a7-491e-39fb57863417
   sha: sha256:8fc4e6296d62358f1958a8970463e01e658846ea525c537c3a52c4eae4000396
 ruby/bundler-1.11.2.gem:
   size: 263168
