@@ -1,7 +1,7 @@
-libyaml/yaml-0.1.5.tar.gz:
-  size: 504897
-  object_id: 3b7b6111-e9a6-468b-8035-46ff800224fd
-  sha: 8b78cb9f759c7d80db8a7328c0ebecfe34fde737
+admin_ui.tgz:
+  size: 48080327
+  object_id: 5dcd6966-8177-4d80-4d7b-620f12a892b1
+  sha: sha256:15bb602a2f133ea752a1b226dca46308e22c2752a84f395cbd3298a5b8677636
 libyaml/yaml-0.1.6.tar.gz:
   size: 503012
   object_id: 5b63285a-fb3f-4508-bbbe-d5beedb7c109
@@ -22,10 +22,6 @@ ruby-3.2.1:
   size: 22466154
   object_id: d6b55c55-9867-44a7-491e-39fb57863417
   sha: sha256:8fc4e6296d62358f1958a8970463e01e658846ea525c537c3a52c4eae4000396
-ruby/bundler-1.2.1.gem:
-  size: 226816
-  object_id: 458d4d9f-aa0e-488d-94d9-ca8b50d6dfb3
-  sha: 0cbe6ad7a41f064d6c11c1058465fffb1bd58069
 ruby/bundler-1.11.2.gem:
   size: 263168
   object_id: 2c164a12-252b-402b-a21d-bc73cab1b438
