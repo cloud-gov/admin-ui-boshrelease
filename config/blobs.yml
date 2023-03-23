@@ -22,10 +22,6 @@ ruby/bundler-2.4.9.gem:
   size: 411136
   object_id: 95134a64-a2eb-4a93-636c-3fd81a7395d9
   sha: sha256:6e2450061a11ad1c1b931551ed27ba60e9eacee148e25e1d73a67dd8944584d3
-ruby/ruby-3.2.1.tar.gz:
-  size: 22466154
-  object_id: f83e4ea8-f173-4911-5991-c1b411308dc0
-  sha: sha256:8fc4e6296d62358f1958a8970463e01e658846ea525c537c3a52c4eae4000396
 ruby/rubygems-1.8.24.tgz:
   size: 380101
   object_id: 824b70e4-8269-4e4b-a347-de17333f7971
