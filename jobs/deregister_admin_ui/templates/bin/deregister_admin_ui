@@ -1,4 +1,4 @@
-#!/bin/env ruby
+#!/bin/env ruby-3.1
 
 %w[uaa_url admin_client_secret client_id client_secret admin_scopes user_scopes].each do |var|
   fail "Please make sure #{var.upcase} is set" unless ENV[var.upcase]

@@ -8,4 +8,4 @@ source /var/vcap/jobs/register_admin_ui/helpers/ctl_setup.sh 'register_admin_ui'
 source /var/vcap/jobs/register_admin_ui/data/properties.sh
 
 export HOME=/var/vcap/data
-ruby /var/vcap/jobs/register_admin_ui/bin/register_admin_ui
+ruby-3.1 /var/vcap/jobs/register_admin_ui/bin/register_admin_ui
