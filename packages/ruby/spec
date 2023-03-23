@@ -5,5 +5,4 @@ dependencies:
   - libyaml
   - ruby-3.1
 files:
-# - ruby/ruby-3.2.1.tar.gz
 - ruby/bundler-2.4.9.gem
