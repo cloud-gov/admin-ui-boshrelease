@@ -1,4 +1,0 @@
-set -e -x
-
-
-${BOSH_INSTALL_TARGET}/bin/gem install ruby-3.1/bundler-2.4.9.gem --no-ri --no-rdoc
