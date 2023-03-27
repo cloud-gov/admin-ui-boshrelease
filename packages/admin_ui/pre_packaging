@@ -2,7 +2,7 @@
 set -e
 
 cd ${BUILD_DIR}/admin_ui
-BUNDLE_WITHOUT=development:test bundle package --all
+BUNDLE_WITHOUT=development:test bundle package 
 
 cd ${BUILD_DIR}/vcap-common
-BUNDLE_WITHOUT=development:test bundle package --all
+BUNDLE_WITHOUT=development:test bundle package
