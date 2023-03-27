@@ -1,7 +1,7 @@
 ---
 name: uaac
 dependencies:
-  - ruby
+  - ruby-3.1
 files:
   - uaac/Gemfile*
 

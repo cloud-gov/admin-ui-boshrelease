@@ -2,7 +2,7 @@
 name: admin_ui
 
 dependencies:
-  - ruby
+  - ruby-3.1
   - libpq
   - sqlite
   - mysqlclient
