@@ -2,7 +2,7 @@
 set -e
 
 cd ${BUILD_DIR}/admin_ui
-BUNDLE_WITHOUT=development:test bundle package 
+BUNDLE_WITHOUT=development:test bundle config set cache_all true
 
 cd ${BUILD_DIR}/vcap-common
-BUNDLE_WITHOUT=development:test bundle package
+BUNDLE_WITHOUT=development:test bundle config set cache_all true
