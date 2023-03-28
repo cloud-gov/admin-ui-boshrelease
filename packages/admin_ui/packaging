@@ -1,7 +1,7 @@
 # abort script on any command that exits with a non zero value
 set -e -x
 
-bundle_cmd=/var/vcap/packages/ruby/bin/bundle
+bundle_cmd=/var/vcap/packages/ruby-3.1/bin/bundle
 mysqlclient_dir=/var/vcap/packages/mysqlclient
 libpq_dir=/var/vcap/packages/libpq
 
