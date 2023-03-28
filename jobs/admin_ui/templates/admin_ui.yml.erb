@@ -33,11 +33,11 @@ monitored_components: [NATS, CloudController, DEA, HealthManager, Router, -Provi
 nats_discovery_interval: 30
 nats_discovery_timeout: 10
 nats_tls:
-  <% if_p("nats.tls.certificate") do %>
+  <% if("nats.tls.certificate") %>
   cert_chain_file: /var/vcap/jobs/nats/tls/nats_client_cert.pem
   private_key_file: /var/vcap/jobs/nats/tls/nats_client_key.pem
   <% end %>
-  <% if_p("nats.tls.ca") do %>
+  <% if("nats.tls.ca") %>
   ca_file: /var/vcap/jobs/nats/tls/nats_ca.pem
   <% end %>
   verify_peer: <%= p("nats.tls.verify_peer") %>
