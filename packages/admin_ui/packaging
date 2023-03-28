@@ -9,11 +9,11 @@ source "${BOSH_PACKAGES_DIR:-/var/vcap/packages}/ruby-3.1/bosh/compile.env"
 cp -a ${BOSH_COMPILE_TARGET}/{admin_ui,vcap-common} ${BOSH_INSTALL_TARGET}
 
 cd ${BOSH_INSTALL_TARGET}/admin_ui
-bundle config build.mysql2 --with-mysql-config=$mysqlclient_dir/bin/mysql_config
-bundle config build.pg --with-pg-lib=$libpq_dir/lib --with-pg-include=$libpq_dir/include
-bundle config build.sequel_pg --with-pg-lib=$libpq_dir/lib --with-pg-include=$libpq_dir/include
-bundle config build.sqlite3 --with-sqlite3-dir=/var/vcap/packages/sqlite
-bundle install --local --deployment --without=development test
+bosh_bundle config build.mysql2 --with-mysql-config=$mysqlclient_dir/bin/mysql_config
+bosh_bundle config build.pg --with-pg-lib=$libpq_dir/lib --with-pg-include=$libpq_dir/include
+bosh_bundle config build.sequel_pg --with-pg-lib=$libpq_dir/lib --with-pg-include=$libpq_dir/include
+bosh_bundle config build.sqlite3 --with-sqlite3-dir=/var/vcap/packages/sqlite
+bosh_bundle install --local --deployment --without=development test
 
 cd ${BOSH_INSTALL_TARGET}/vcap-common
-bundle install --local --deployment --without=development test
+bosh_bundle install --local --deployment --without=development test
